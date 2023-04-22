@@ -5,12 +5,23 @@
   .footer-input {
     width: 398px;
   }
+  .mobile-soc-list {
+    gap: 56px;
+  }
 }
 /* !-------------------------768-------------------------------- */
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+  .contacts-list {
+    display: flex;
+    gap: 40px;
   }
   .hero {
     padding-top: 112px;
@@ -175,5 +186,9 @@
   }
   .footer-container {
     padding-left: 15px;
+    gap: 0;
+  }
+  .footer-form-wrap {
+    margin-left: auto;
   }
 }
