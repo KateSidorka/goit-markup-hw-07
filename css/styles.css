@@ -201,12 +201,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--p-transition);
   position: absolute;
   top: 24px;
   right: 24px;
+}
+.mobile-close-icon {
+  fill: currentColor;
 }
 .mob-menu-list {
   padding-top: 56px;
@@ -292,7 +292,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -307,12 +307,21 @@ body {
   display: block;
   margin: 0 auto;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob-2x.jpg);
+  }
+}
 .hero-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  /* font-size: 56px;
-  line-height: 1.07; */
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -477,7 +486,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 24px; */
   column-gap: 16px;
   row-gap: 72px;
 }
@@ -487,8 +495,6 @@ body {
   align-items: center;
   width: 190px;
   height: 88px;
-  /* width: 168px;
-  height: 88px; */
   color: #8e8f99;
   border: 1px solid currentColor;
   border-radius: 4px;

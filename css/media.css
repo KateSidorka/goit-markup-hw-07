@@ -8,6 +8,24 @@
   .mobile-soc-list {
     gap: 56px;
   }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tablet-2x.jpg);
+    }
+  }
 }
 /* !-------------------------768-------------------------------- */
 
@@ -38,6 +56,22 @@
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-2x.jpg);
+    }
   }
   .hero-title {
     font-size: 56px;
@@ -117,9 +151,16 @@
   .container {
     width: 1158px;
   }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   .contacts-list {
     flex-direction: row;
     gap: 40px;
+  }
+  .current::after {
+    top: 43px;
   }
   .hero {
     height: 600px;
