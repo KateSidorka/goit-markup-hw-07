@@ -15,14 +15,26 @@
   .container {
     width: 768px;
   }
+  .mobile-open-btn {
+    display: none;
+  }
   .header-list {
     display: flex;
     gap: 40px;
   }
+  .header {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  .current::after {
+    top: 48px;
+  }
   .contacts-list {
     display: flex;
-    gap: 40px;
+    gap: 12px;
+    flex-direction: column;
   }
+
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -96,13 +108,19 @@
   .footer-input {
     width: 264px;
   }
+  .modal {
+    width: 408px;
+  }
 }
 /* !------------------------1158--------------------------------- */
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
   }
-
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
   .hero {
     height: 600px;
     padding-top: 188px;
