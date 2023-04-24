@@ -120,21 +120,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--p-transition);
 }
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 43px;
-
-  width: 100%;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-}
-.current {
-  position: relative;
-  color: var(--third-title-color);
-}
 
 .header-link:hover,
 .header-link:focus {
@@ -163,10 +148,9 @@ body {
 .mobile-open-btn {
   min-width: 32px;
   height: 22px;
-  background: #ffffff;
+  background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
   color: #2e2f42;
   outline: none;
   border: none;
@@ -198,9 +182,9 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   color: #2e2f42;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   position: absolute;
   top: 24px;
   right: 24px;
@@ -228,6 +212,10 @@ body {
 }
 .mob-menu-link:focus {
   color: #404bbf;
+}
+.current {
+  position: relative;
+  color: var(--third-title-color);
 }
 
 .mob-menu-contacts-list {
@@ -301,7 +289,7 @@ body {
   padding-bottom: 188px; */
   padding-top: 112px;
   padding-bottom: 112px;
-  max-width: 1158px;
+  max-width: 428px;
   height: 432px;
   /* height: 600px; */
   display: block;
@@ -666,20 +654,27 @@ body {
 /* !----------------PORTFOLIO------ */
 
 .filter-buttons {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  /* padding-top: 96px;
+  padding-bottom: 120px; */
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .filter-list {
   margin-bottom: 72px;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
+  row-gap: 16px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .filter-btn {
   background-color: var(--second-background-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 8px 16px;
+  /* padding: 12px 24px; */
 }
 .filter-btn {
   font-family: "Roboto", sans-serif;
@@ -778,8 +773,8 @@ body {
   transform: translate(-50%, -50%) scale(0) rotate(720deg);
 }
 .modal {
-  width: 392px;
-  height: 584px;
+  /* width: 392px;
+  height: 584px; */
   /* width: 408px;
   height: 576px; */
   background-color: #fcfcfc;
@@ -792,6 +787,10 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
   padding: 72px 24px 24px;
+  width: 95%;
+  height: 95%;
+  max-height: 524px;
+  overflow: scroll;
 }
 .modal-close-btn {
   width: 24px;
@@ -884,7 +883,7 @@ body {
 
 .textarea {
   resize: none;
-  width: 360px;
+  width: 100%;
   height: 120px;
   padding-left: 16px;
   padding-top: 8px;
